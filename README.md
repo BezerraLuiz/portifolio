@@ -1,6 +1,6 @@
 <h1 align="center">Portifólio - Luiz Antônio Bezerra 💻</h1>
 
-<h4 align="center"><a href="https://lucyanovidio.vercel.app">Confira o projeto aqui</a></h4>
+<h4 align="center"><a href="https://luiz-bezerra-portifolio.netlify.app">Confira o projeto aqui</a></h4>
 
 ---
 
