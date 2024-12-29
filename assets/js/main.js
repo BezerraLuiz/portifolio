@@ -1,3 +1,4 @@
+import { desafios } from "./desafios.js";
 import { projetos } from "./projetos.js";
 
 const navigation = document.querySelector("#navigation");
@@ -9,6 +10,18 @@ const notebook_1 = document.querySelector("#notebook-1");
 const notebook_2 = document.querySelector("#notebook-2");
 const notebook_2_white = document.querySelector("#notebook-2-white");
 const vidro = document.querySelector("#vidro");
+
+window.addEventListener("load", function begin() {
+  projetos(projectsSection);
+  const desafioBtn = document.querySelector("#desafio");
+
+  desafioBtn.addEventListener("click", () => {
+    desafios(projectsSection);
+    document
+      .querySelector("#backToProjectsBtn")
+      .addEventListener("click", begin);
+  });
+});
 
 window.addEventListener("scroll", onScroll);
 onScroll();
