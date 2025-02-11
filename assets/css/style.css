@@ -9,20 +9,31 @@
 }
 
 :root {
-  --hue: 270; /* Hue para roxo */
-  --primary-color: hsl(var(--hue), 92%, 53%); /* Cor principal roxa mais clara */
-  --primary-hover: hsl(var(--hue), 92%, 43%); /* Hover para a cor roxa mais clara */
-  --secundary-color: hsl(0, 0%, 5%); /* Preto */
-  --third-color: hsla(0, 0%, 100%, 0.1); /* Cor com transparência */
-  --bg-color: hsl(0, 0%, 8%); /* Fundo escuro */
+  --hue: 239;
+  /* Hue para roxo */
+  --primary-color: hsl(var(--hue), 92%, 53%);
+  /* Cor principal roxa mais clara */
+  --primary-hover: hsl(var(--hue), 92%, 43%);
+  /* Hover para a cor roxa mais clara */
+  --secundary-color: hsl(0, 0%, 5%);
+  /* Preto */
+  --third-color: hsla(0, 0%, 100%, 0.1);
+  /* Cor com transparência */
+  --bg-color: hsl(0, 0%, 8%);
+  /* Fundo escuro */
 
-  --headline: hsl(0, 0%, 100%); /* Branco */
-  --paragraph: hsla(0, 0%, 100%, 0.658); /* Branco com opacidade */
-  --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%); /* Cor de parágrafo mais clara */
-  
-  font-size: 62.5%; /* 10px para 1rem */
-  
-  --nav-height: 7.2rem; /* Altura da navegação */
+  --headline: hsl(0, 0%, 100%);
+  /* Branco */
+  --paragraph: hsla(0, 0%, 100%, 0.658);
+  /* Branco com opacidade */
+  --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
+  /* Cor de parágrafo mais clara */
+
+  font-size: 62.5%;
+  /* 10px para 1rem */
+
+  --nav-height: 7.2rem;
+  /* Altura da navegação */
 }
 
 
@@ -209,12 +220,7 @@ body nav#navigation .social-links li:nth-child(2) svg:hover path:nth-child(2) {
 }
 
 body.light-mode .social-links li:nth-child(2) svg:hover path:nth-child(2),
-body.light-mode
-  nav#navigation
-  .social-links
-  li:nth-child(2)
-  svg:hover
-  path:nth-child(2) {
+body.light-mode nav#navigation .social-links li:nth-child(2) svg:hover path:nth-child(2) {
   fill: #000;
 }
 
@@ -456,6 +462,7 @@ body.menu-expanded button path {
   from {
     width: 0;
   }
+
   to {
     width: 27.5rem;
   }
@@ -465,6 +472,7 @@ body.menu-expanded button path {
   from {
     border-right-color: var(--primary-color);
   }
+
   to {
     border-right-color: transparent;
   }
@@ -488,9 +496,11 @@ body.menu-expanded button path {
   0% {
     transform: translateY(2rem);
   }
+
   50% {
     transform: translateY(-2rem);
   }
+
   100% {
     transform: translateY(2rem);
   }
@@ -562,6 +572,7 @@ body.light-mode #home img#notebook-2-white {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -572,6 +583,7 @@ body.light-mode #home img#notebook-2-white {
     right: -4rem;
     opacity: 0;
   }
+
   to {
     right: -2rem;
     opacity: 1;
@@ -638,7 +650,7 @@ body.light-mode #home img#notebook-2-white {
   font-style: italic;
 }
 
-#projects header p + a {
+#projects header p+a {
   padding: 0.8rem 2rem;
   color: var(--paragraph);
 
@@ -699,7 +711,7 @@ body.light-mode #home img#notebook-2-white {
   transition: 300ms;
 }
 
-#projects .card:hover > .img-wrapper img {
+#projects .card:hover>.img-wrapper img {
   filter: opacity(0.5);
 }
 
@@ -720,7 +732,7 @@ body.light-mode #home img#notebook-2-white {
   transition: 400ms;
 }
 
-#projects .card:hover > .img-wrapper .buttons {
+#projects .card:hover>.img-wrapper .buttons {
   visibility: visible;
   opacity: 1;
 }
@@ -758,7 +770,7 @@ body.light-mode #home img#notebook-2-white {
   cursor: pointer;
 }
 
-#projects .card .buttons a:hover > svg {
+#projects .card .buttons a:hover>svg {
   fill: #fff;
 }
 
@@ -1008,7 +1020,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
   transition: 500ms;
 }
 
-#toggle input:checked + label::before {
+#toggle input:checked+label::before {
   transform: translateX(3.8rem);
 }
 
@@ -1220,27 +1232,15 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     stroke: #ff377a;
   }
 
-  nav#navigation.scroll
-    .social-links
-    li:nth-child(2)
-    svg:hover
-    path:nth-child(2) {
+  nav#navigation.scroll .social-links li:nth-child(2) svg:hover path:nth-child(2) {
     fill: #fff;
   }
 
-  nav#navigation.scroll
-    .social-links
-    li:nth-child(3)
-    svg:hover
-    path:nth-child(2) {
+  nav#navigation.scroll .social-links li:nth-child(3) svg:hover path:nth-child(2) {
     fill: #0a66c2;
   }
 
-  nav#navigation.scroll
-    .social-links
-    li:nth-child(4)
-    svg:hover
-    path:nth-child(2) {
+  nav#navigation.scroll .social-links li:nth-child(4) svg:hover path:nth-child(2) {
     fill: #00abf0;
   }
 
@@ -1291,6 +1291,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     from {
       width: 0;
     }
+
     to {
       width: 38rem;
     }
@@ -1470,6 +1471,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     from {
       width: 0;
     }
+
     to {
       width: 23.5rem;
     }
@@ -1562,6 +1564,7 @@ footer .social-links li:nth-child(4) svg path:nth-child(2) {
     from {
       width: 0;
     }
+
     to {
       width: 18rem;
     }
