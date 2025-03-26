@@ -597,8 +597,8 @@ body.light-mode #home img#notebook-2-white {
 }
 
 #about .content p {
-  text-align: justify;
-  margin-block: 2.4rem;
+  text-align: left;
+  margin-block: 2rem;
 }
 
 #about .content a {
