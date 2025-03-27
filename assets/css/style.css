@@ -9,12 +9,11 @@
 }
 
 :root {
-  --hue: 239;
-  /* Hue para roxo */
-  --primary-color: hsl(var(--hue), 92%, 53%);
-  /* Cor principal roxa mais clara */
-  --primary-hover: hsl(var(--hue), 92%, 43%);
-  /* Hover para a cor roxa mais clara */
+  --hue: 345; /* Mantendo o tom de vinho avermelhado */
+  --primary-color: hsl(var(--hue), 55%, 40%);
+  /* Bordô mais claro para melhor contraste */
+  --primary-hover: hsl(var(--hue), 60%, 35%);
+  /* Tom um pouco mais escuro para hover */
   --secundary-color: hsl(0, 0%, 5%);
   /* Preto */
   --third-color: hsla(0, 0%, 100%, 0.1);
@@ -24,10 +23,10 @@
 
   --headline: hsl(0, 0%, 100%);
   /* Branco */
-  --paragraph: hsla(0, 0%, 100%, 0.658);
-  /* Branco com opacidade */
-  --paragraph-2: hsl(calc(var(--hue) + 10), 14%, 97%);
-  /* Cor de parágrafo mais clara */
+  --paragraph: hsla(0, 0%, 100%, 0.8);
+  /* Aumentei a opacidade para melhorar a leitura */
+  --paragraph-2: hsl(calc(var(--hue) + 10), 20%, 85%);
+  /* Deixei o tom de parágrafo mais claro */
 
   font-size: 62.5%;
   /* 10px para 1rem */
@@ -35,7 +34,6 @@
   --nav-height: 7.2rem;
   /* Altura da navegação */
 }
-
 
 html {
   scroll-behavior: smooth;
